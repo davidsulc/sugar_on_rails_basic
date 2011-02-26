@@ -4,8 +4,12 @@ A trivial Rails 3 app using the SugarCRM gem. It will hopefully help to get you 
 
 == How we got here
 
- 1. `rails new sugar_on_rails_basic --skip-active-record # we don't a database here, but you might
- 2. Add the sugarcrm gem to the Gemfile. The git repository was used in this case because we're on the bleeding edge: the Rails generator (used in a later step) isn't in the gem yet. Starting with gem version 0.9.12, you can simply use `gem 'sugarcrm'` in your gem file (i.e. no need to use the git repository)
- 3. `bundle install`
- 4. `rails g sugarcrm:config`
- 5. Edit the configuration file in `config/sugarcrm.yml` to match your environment
+1. `rails new sugar_on_rails_basic --skip-active-record` (we don't a database here, but you might)
+2. Add the sugarcrm gem to the Gemfile. The git repository was used in this case because we're on the bleeding edge: the Rails generator (used in a later step) isn't in the gem yet. Starting with gem version 0.9.12, you can simply use `gem 'sugarcrm'` in your gem file (i.e. no need to use the git repository)
+3. `bundle install`
+4. `rails g sugarcrm:config`
+5. Edit the configuration file in `config/sugarcrm.yml` to match your environment
+
+You can see exactly what was done in each step by looking at the commit history (select "commits" button from menu on top of page).
+
+A simple controller and view were then added to show content in a view.
