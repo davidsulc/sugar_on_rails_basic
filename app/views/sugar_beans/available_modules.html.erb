@@ -1,9 +1,9 @@
-<h1>Invalid Module: <%= @module %></h1>
+<h1>Invalid Module: <%= @sugar_module %></h1>
 
 <div id="available_modules">
   <h2>Available modules:</h2>
   <ul>
-    <%- @modules.each do |m| %>
+    <%- @sugar_modules.each do |m| %>
     <% if m.respond_to? :tableize %><li class="module"><%= m.tableize %></li><% end %>
     <%- end %>
   </ul>

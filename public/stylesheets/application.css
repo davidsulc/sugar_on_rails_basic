@@ -7,6 +7,25 @@ body {
 	font-family: Arial, Verdana, Helvetica, sans-serif;
 }
 
+table {
+	border-width: 0px;
+	border-spacing: ;
+	border-style: none;
+	border-collapse: collapse;
+}
+
+table th {
+	border-width: 0px;
+	padding: 1px;
+	border-style: inset;
+}
+
+table td {
+	border-width: 0px;
+	padding: 1px;
+	border-style: inset;
+}
+
 a {
 	text-decoration: none;	
 } 
@@ -14,7 +33,6 @@ a {
 a:link, a:visited, a:hover, a:active {
 	text-decoration: none;
 }
-
 
 h1, h2, h3 {
 	color: #999;
@@ -83,6 +101,23 @@ h1, h2, h3 {
 	border-bottom-left-radius: 0px 0px;
 }
 
-.beans {
+.container_content {
 	padding: 2px 0px 2px 10px;
+	
+}
+
+#attributes {
+	text-align: left;
+	border: collapse;
+}
+
+#attributes th {
+	background-color: #EEE;
+	text-align: right;
+	color: #888;
+	display: table-cell;
+	font-size: 13px;
+	font-weight: normal;
+	height: 18px;
+	line-height: 18px;
 }

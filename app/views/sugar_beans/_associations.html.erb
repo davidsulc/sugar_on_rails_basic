@@ -1,9 +1,9 @@
-<div class="associations">
+<div id="associations">
   <h2>Associations</h2>
   <table>
     <%- @bean.associations.each do |a| %>
     <tr>
-      <th><%= a.proxy_methods[0] %></th>
+      <td><%= link_to(a.proxy_methods[0], sugar_bean_associations_path(@sugar_module, @bean.id, a.proxy_methods[0]))  %></td>
     </tr>
     <%- end %>
   </table>

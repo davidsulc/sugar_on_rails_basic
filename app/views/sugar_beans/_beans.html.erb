@@ -1,0 +1,11 @@
+<%- if @beans.length > 0 %>
+<table class="beans">
+  <%- @beans.each do |bean| %>
+  <tr id="<%= bean.id %>">
+    <td><%= link_to(bean.name, sugar_bean_path(bean.class._module.name.downcase, bean.id)) %></td>
+  </tr>
+  <%- end %>
+</table>
+<%- else %>
+<p class="beans">No records found!</p>
+<%- end %>

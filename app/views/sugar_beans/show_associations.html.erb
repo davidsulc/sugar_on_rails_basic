@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="container_header"><%= @sugar_module.capitalize %></div>
+  <div class="container_header"><%= @sugar_module.capitalize + ": " + @association.capitalize %></div>
   <div class="container_content">  
     <%= render :partial => "beans" %>
   </div>

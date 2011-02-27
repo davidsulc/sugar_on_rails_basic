@@ -1,7 +1,21 @@
 <div class="container">
   <div class="container_header">Details</div>
-  <div class="bean">
-    <%= render :partial => "attributes",    :locals => {:bean => @bean} %>
-    <%= render :partial => "associations",  :locals => {:bean => @bean} %>
+  <div class="container_content">  
+    <div class="bean">
+      <div id="tabs">
+      	<ul>
+      		<li><a href="#attributes">Attributes</a></li>
+      		<li><a href="#associations">Associations</a></li>
+        </ul>
+      </div>
+      <%= render :partial => "attributes" %>
+      <%= render :partial => "associations" %>
+    </div>
   </div>
 </div>
+
+<script>
+	$(function() {
+		$("#tabs").tabs();
+	});
+</script>
