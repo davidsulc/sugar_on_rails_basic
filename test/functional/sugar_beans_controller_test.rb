@@ -1,6 +1,8 @@
 require 'test_helper'
 
 class SugarBeansControllerTest < ActionController::TestCase
+  # TODO: Figure out how to test the root route
+  
   test "should get accounts#list" do
     get(:list, {:module => "accounts"})
     assert_response :success
@@ -10,4 +12,10 @@ class SugarBeansControllerTest < ActionController::TestCase
     get(:show, {:module => "users", :id => "1"})
     assert_response :success
   end
+  
+  test "should display available modules" do
+    get(:list, {:module => "kittens"})
+    assert_response :success
+  end
+  
 end

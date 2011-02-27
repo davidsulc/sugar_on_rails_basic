@@ -1,9 +1,11 @@
 SugarOnRailsBasic::Application.routes.draw do
   #get "users#show"
-  root :to => "accounts#list"
 
-  match ':module' => 'sugar_beans#list'
+  match ':module' => 'sugar_beans#list', :as => "module"
   match ':module/:id' => 'sugar_beans#show', :as => "sugar_bean"
+
+  root :to => "sugar_beans#list", :module => "accounts"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
