@@ -4,7 +4,7 @@
   <h2>Available modules:</h2>
   <ul>
     <%- @modules.each do |m| %>
-    <li class="module"><%= m.tableize %></li>
+    <% if m.respond_to? :tableize %><li class="module"><%= m.tableize %></li><% end %>
     <%- end %>
   </ul>
 </div>
