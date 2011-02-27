@@ -1,7 +1,13 @@
 require 'test_helper'
 
 class SugarBeansControllerTest < ActionController::TestCase
-  # TODO: Figure out how to test the root route
+  test "should route root to home page" do
+    # check root_path redirects to these parameters
+    # adapted from http://www.derekhammer.com/2011/02/19/root-route-testing-in-rails.html
+    opts = { :controller => 'sugar_beans', :action => 'list', :module => 'accounts'}
+    assert_recognizes opts, '/'
+  end
+
   
   test "should get accounts#list" do
     get(:list, {:module => "accounts"})
