@@ -7,12 +7,17 @@ body {
 	font-family: Arial, Verdana, Helvetica, sans-serif;
 }
 
-a:link a:visited a:hover a:active {
+a {
+	text-decoration: none;	
+} 
+
+a:link, a:visited, a:hover, a:active {
 	text-decoration: none;
 }
 
+
 h1, h2, h3 {
-    color: #999;
+	color: #999;
 }
 
 .modules {
@@ -40,6 +45,7 @@ h1, h2, h3 {
 .module a {
 	color: #666;
 	font-weight: bold;
+	text-decoration: none;
 }
 
 .container {
