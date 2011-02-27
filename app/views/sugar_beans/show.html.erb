@@ -1,1 +1,7 @@
-<%= raw display(@bean)%>
+<div class="container">
+  <div class="container_header">Details</div>
+  <div class="bean">
+    <%= render :partial => "attributes",    :locals => {:bean => @bean} %>
+    <%= render :partial => "associations",  :locals => {:bean => @bean} %>
+  </div>
+</div>

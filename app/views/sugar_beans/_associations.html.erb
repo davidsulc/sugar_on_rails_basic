@@ -1,0 +1,10 @@
+<div class="associations">
+  <h2>Associations</h2>
+  <table>
+    <%- @bean.associations.each do |a| %>
+    <tr>
+      <th><%= a.proxy_methods[0] %></th>
+    </tr>
+    <%- end %>
+  </table>
+</div>

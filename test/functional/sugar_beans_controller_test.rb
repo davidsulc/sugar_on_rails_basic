@@ -8,7 +8,6 @@ class SugarBeansControllerTest < ActionController::TestCase
     assert_recognizes opts, '/'
   end
 
-  
   test "should get accounts#list" do
     get(:list, {:module => "accounts"})
     assert_response :success

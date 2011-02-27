@@ -1,1 +1,10 @@
-<%= raw display_as_list(@beans) %>
+<div class="container">
+  <div class="container_header"><%= @module.capitalize %></div>
+  <table class="beans">
+    <%- @beans.each do |bean| %>
+    <tr id="<%= bean.id %>">
+      <td><%= link_to(bean.name, sugar_bean_path(@module, bean.id)) %></td>
+    </tr>
+    <%- end %>
+  </table>
+</div>
