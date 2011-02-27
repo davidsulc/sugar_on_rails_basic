@@ -20,9 +20,9 @@ class SugarBeansControllerTest < ActionController::TestCase
     assert_response :success
   end
   
-  test "should display available modules" do
+  test "should render available modules on invalid module param" do
     get(:list, {:module => "kittens"})
-    assert_response :success
+    assert_template 'available_modules'
   end
   
 end
