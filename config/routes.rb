@@ -1,5 +1,4 @@
 SugarOnRailsBasic::Application.routes.draw do
-  #get "users#show"
   root :to => "accounts#list"
 
   match ':module' => 'sugar_beans#list'
