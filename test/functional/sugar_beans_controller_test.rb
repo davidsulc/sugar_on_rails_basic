@@ -19,9 +19,18 @@ class SugarBeansControllerTest < ActionController::TestCase
     assert_response :success
   end
   
+  test "should get users/seed_max_id/meetings" do
+    get(:show_associations, {:module => "users", :id => "seed_max_id", :association => "meetings"})
+    assert_equal SugarCRM::User.find("seed_max_id"), assigns(@bean)["bean"]
+    assert_response :success
+  end
+  
+  
   test "should render available modules on invalid module param" do
     get(:list, {:module => "kittens"})
     assert_template 'available_modules'
   end
+  
+  
   
 end
