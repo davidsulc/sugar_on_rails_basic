@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/chicks/sugarcrm.git
-  revision: 4943548f5fa1f9c1bd4451556b432f1417c33571
+  revision: 2520456730697d65b0dabe2100b196f98b07cacd
   specs:
     sugarcrm (0.9.11)
       activesupport (>= 3.0.0)

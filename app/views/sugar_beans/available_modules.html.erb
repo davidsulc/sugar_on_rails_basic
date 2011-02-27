@@ -1,0 +1,12 @@
+<h1>Invalid Module: <%= @module %></h1>
+
+<div id="available_modules">
+  <h2>Available modules:</h2>
+  <ul>
+    <%- @modules.each do |m| %>
+    <li class="module"><%= m.tableize %></li>
+    <%- end %>
+  </ul>
+</div>
+
+<%%>
